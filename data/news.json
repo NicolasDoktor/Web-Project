@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "date": "2025-12-05",
+        "title": "Major Update 2.0 - New Class System",
+        "category": "Update",
+        "excerpt": "Introducing the completely revamped class system with four distinct playstyles. Each class now features unique abilities, customizable loadouts, and specialized skill trees. Balance changes across all weapons and equipment."
+    },
+    {
+        "id": 2,
+        "date": "2025-11-28",
+        "title": "Patch Notes 1.8.5 - Performance Improvements",
+        "category": "Patch",
+        "excerpt": "Significant performance optimizations reducing loading times by 40%. Fixed critical bugs affecting multiplayer stability. Improved AI behavior for robotic enemies. Various quality-of-life improvements based on community feedback."
+    },
+    {
+        "id": 3,
+        "date": "2025-11-20",
+        "title": "New Map: Industrial Wasteland",
+        "category": "Content",
+        "excerpt": "Explore the ruins of a massive industrial complex overrun by hostile machines. Features vertical gameplay, destructible environments, and new mission types. Available now for all players."
+    },
+    {
+        "id": 4,
+        "date": "2025-11-15",
+        "title": "Community Event: Robot Uprising",
+        "category": "Event",
+        "excerpt": "Join forces with players worldwide in our biggest community event yet. Defend key locations against waves of increasingly difficult robotic enemies. Exclusive rewards for top performers and participants."
+    },
+    {
+        "id": 5,
+        "date": "2025-11-08",
+        "title": "Developer Diary: The Future of ARC Raiders",
+        "category": "News",
+        "excerpt": "Our development team shares insights into upcoming features, including new enemy types, expanded crafting system, and the highly anticipated PvPvE mode. Plus a sneak peek at Year 2 content roadmap."
+    },
+    {
+        "id": 6,
+        "date": "2025-11-01",
+        "title": "Weapon Balance Update",
+        "category": "Patch",
+        "excerpt": "Comprehensive weapon balance pass addressing community concerns. Assault rifles buffed, sniper rifles adjusted for better long-range viability. Full patch notes available on our official forums."
+    }
+]
