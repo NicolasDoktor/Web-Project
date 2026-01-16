@@ -1,11 +1,9 @@
-// ============================================
-// AJAX DATA LOADING
-// ============================================
 
-// Base URL for API endpoints
+
+
 const API_BASE_URL = 'http://localhost:5000/api';
 
-// Fallback to local JSON files if backend is not running
+
 const USE_LOCAL_FILES = true;
 
 /**
@@ -17,7 +15,7 @@ async function fetchData(endpoint) {
     try {
         const url = USE_LOCAL_FILES ? `data/${endpoint}.json` : `${API_BASE_URL}/${endpoint}`;
 
-        // Use XMLHttpRequest for local files to avoid CORS issues
+        
         if (USE_LOCAL_FILES) {
             return new Promise((resolve, reject) => {
                 const xhr = new XMLHttpRequest();
@@ -40,7 +38,7 @@ async function fetchData(endpoint) {
                 xhr.send();
             });
         } else {
-            // Use fetch for API calls
+            
             const response = await fetch(url);
 
             if (!response.ok) {
@@ -56,9 +54,7 @@ async function fetchData(endpoint) {
     }
 }
 
-/**
- * Load and render character classes
- */
+
 async function loadClasses() {
     const classesGrid = document.getElementById('classesGrid');
 
@@ -102,7 +98,7 @@ async function loadClasses() {
             </div>
         `).join('');
 
-        // Trigger reveal animations
+        
         revealElements();
 
     } catch (error) {
@@ -153,7 +149,7 @@ async function loadNews() {
             </div>
         `).join('');
 
-        // Trigger reveal animations
+        
         revealElements();
 
     } catch (error) {
@@ -219,29 +215,27 @@ async function submitContactForm(event) {
             }
         }
 
-        // Show success message
+        
         alert('Zpráva byla úspěšně odeslána! Brzy se vám ozveme.');
         form.reset();
 
     } catch (error) {
         console.error('Error submitting form:', error);
 
-        // For demo purposes, still show success even if backend is not running
+        
         alert('Zpráva byla odeslána (demo režim).');
         form.reset();
     }
 }
 
-// ============================================
-// INITIALIZATION
-// ============================================
 
-// Load data when DOM is ready
+
+/
 document.addEventListener('DOMContentLoaded', () => {
     loadClasses();
     loadNews();
 
-    // Setup contact form
+    
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', submitContactForm);
