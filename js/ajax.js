@@ -230,7 +230,7 @@ async function submitContactForm(event) {
 
 
 
-/
+
 document.addEventListener('DOMContentLoaded', () => {
     loadClasses();
     loadNews();
