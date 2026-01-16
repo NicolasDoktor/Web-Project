@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Plynulé scrollování k sekcím
+// scrollování k sekcím
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('a[href^="#"]');
     
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Animace při scrollování - objevování sekcí
+// Animace při scrollování
 window.addEventListener('scroll', function() {
     var reveals = document.querySelectorAll('.reveal');
     
